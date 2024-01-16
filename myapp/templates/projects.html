@@ -1,2 +1,6 @@
 <h1>Projects</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequatur doloribus dolor nemo minima eaque fugiat odit officiis possimus odio. Ea error eius voluptatem quis, reprehenderit porro a earum adipisci, ab cum perferendis aspernatur tempore doloribus similique sequi suscipit, eligendi expedita sed? Rerum nostrum ipsa facere ipsam illum nobis porro!</p>
+{% for projects in projects %}
+<article>
+<h2>{{projects.name}}</h2>
+</article>
+{% endfor %}
