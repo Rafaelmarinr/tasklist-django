@@ -1,8 +1,11 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
 
 {% block content %}
 
 <h1>{{title}}</h1>
+<img src="{% static 'rafael.png' %}" alt="" width="150px">
+
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur illum unde earum a ducimus. Maiores delectus eos sint dolore velit reiciendis accusamus laudantium hic, pariatur, iusto saepe sapiente. Voluptatibus, explicabo?</p>
 
 {% endblock %}
