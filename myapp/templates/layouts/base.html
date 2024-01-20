@@ -9,16 +9,21 @@
 </head>
 <body>
     
-    <nav>
-        <li><a href="/">Home</a></li>
-        <li><a href="{% url 'about' %}">About us</a></li>
-        <li><a href="{% url 'project' %}">Projects</a></li>
-        <li><a href="{% url 'tasks' %}">Tasks</a></li>
-        <li><a href="{% url 'create_task' %}">Create task</a></li>
-        <li><a href="{% url 'create_project' %}">Create project</a></li>
+    <nav class="navbar container">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            <li><a href="{% url 'project' %}">Projects</a></li>
+            <li><a href="{% url 'tasks' %}">Tasks</a></li>
+            <li><a href="{% url 'create_task' %}">Create task</a></li>
+            <li><a href="{% url 'create_project' %}">Create project</a></li>
+        </ul>
     </nav>
+
+    <main class="container">
     {% block content %}
     {% endblock %}
+    </main>
 
 </body>
 </html>

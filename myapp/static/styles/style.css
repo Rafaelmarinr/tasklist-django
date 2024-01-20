@@ -3,3 +3,35 @@ body{
     color: #fff;
     margin: 28px;
 }
+
+.navbar{
+    background-color: #404040;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: antiquewhite;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.card{
+    background: whitesmoke;
+    padding: 10px;
+    color: black;
+    margin-bottom: 2px;
+}
+.input{
+    padding: 10px;
+    background: antiquewhite;
+    display: block;
+}

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Proyect, Task
 from .forms import CreateNewTask, CreateNewProject
@@ -47,3 +47,13 @@ def create_project(request):
             'form': CreateNewProject()
         })
         return redirect('project')
+
+def project_detail(request,id):
+
+    project = get_object_or_404(Proyect, id=id)
+    tasks = Task.objects.filter(proyect_id=id)
+    print(project)
+    return render(request, 'projects/project_detail.html',{
+        'project': project,
+        'task': tasks
+    })
